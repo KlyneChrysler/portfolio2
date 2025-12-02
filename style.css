@@ -8,7 +8,6 @@
 	box-sizing: border-box;
 }
 
-/* Dark Theme (Default) */
 body {
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 	background-color: #0e100f;
@@ -26,13 +25,14 @@ header {
 }
 
 #name {
-	font-size: clamp(3rem, 8vw, 6rem);
+	font-size: clamp(2.5rem, 8vw, 6rem);
 	font-weight: 900;
 	letter-spacing: -0.05em;
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	color: #fffce1;
 	animation: fadeInUp 0.8s ease;
+	word-break: break-word;
 }
 
 #profile-img {
@@ -77,6 +77,9 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	box-shadow: 0 10px 30px rgba(168, 255, 133, 0.3);
+	width: max-content;
+	max-width: 90%;
+	overflow-wrap: break-word;
 }
 
 #theme-toggle:hover {
@@ -98,6 +101,7 @@ section {
 	border-radius: 20px;
 	border: 1px solid #2a2d2b;
 	transition: all 0.3s ease;
+	word-wrap: break-word;
 }
 
 section:hover {
@@ -114,6 +118,7 @@ section h2 {
 	letter-spacing: -0.03em;
 	position: relative;
 	display: inline-block;
+	word-break: break-word;
 }
 
 section h2::before {
@@ -143,6 +148,7 @@ ul li {
 	transition: all 0.3s ease;
 	font-size: 1.1rem;
 	line-height: 1.8;
+	word-break: break-word;
 }
 
 ul li:hover {
@@ -163,6 +169,7 @@ a {
 	font-weight: 600;
 	position: relative;
 	transition: all 0.3s ease;
+	word-break: break-word;
 }
 
 a::after {
@@ -272,25 +279,40 @@ body.light a:hover {
 	}
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Fully Mobile Responsive */
+@media (max-width: 1024px) {
 	header {
-		padding: 40px 15px;
+		padding: 50px 15px;
 	}
 	
 	#profile-img {
+		width: 180px;
+		height: 180px;
+	}
+	
+	#name {
+		font-size: 3rem;
+	}
+	
+	#course-year {
+		font-size: 1.1rem;
+	}
+
+	section {
+		padding: 35px 15px;
+		margin: 40px 10px;
+	}
+
+	ul li {
+		font-size: 1rem;
+		padding: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	#profile-img {
 		width: 150px;
 		height: 150px;
-	}
-	
-	section {
-		margin: 30px 15px;
-		padding: 30px 20px;
-	}
-	
-	ul li {
-		padding: 15px;
-		font-size: 1rem;
 	}
 	
 	#name {
@@ -298,7 +320,12 @@ body.light a:hover {
 	}
 	
 	section h2 {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
+	}
+	
+	#theme-toggle {
+		padding: 12px 30px;
+		font-size: 0.95rem;
 	}
 }
 
@@ -309,12 +336,26 @@ body.light a:hover {
 	}
 	
 	#theme-toggle {
-		padding: 12px 25px;
+		padding: 10px 25px;
 		font-size: 0.9rem;
 	}
 	
 	section {
 		margin: 20px 10px;
-		padding: 25px 15px;
+		padding: 20px 15px;
+		border-radius: 15px;
+	}
+
+	section h2 {
+		font-size: 1.4rem;
+	}
+
+	ul li {
+		font-size: 0.95rem;
+		padding: 12px;
+	}
+
+	#name {
+		font-size: 2rem;
 	}
 }
