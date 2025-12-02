@@ -1,361 +1,302 @@
-/* Import a modern font */
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
 
-/* Reset and Base Styles */
+/* Reset */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
-	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	background-color: #0e100f;
-	color: #fffce1;
-	line-height: 1.6;
-	transition: all 0.3s ease;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #0e100f;
+    color: #fffce1;
+    line-height: 1.6;
+    transition: all 0.3s ease;
 }
 
-/* Header Section */
+/* Header */
 header {
-	text-align: center;
-	padding: 60px 20px;
-	background: linear-gradient(180deg, #0e100f 0%, #1a1d1b 100%);
-	border-bottom: 1px solid #2a2d2b;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #0e100f 0%, #1a1d1b 100%);
+    border-bottom: 1px solid #2a2d2b;
 }
 
 #name {
-	font-size: clamp(2.5rem, 8vw, 6rem);
-	font-weight: 900;
-	letter-spacing: -0.05em;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-	color: #fffce1;
-	animation: fadeInUp 0.8s ease;
-	word-break: break-word;
+    font-size: clamp(2rem, 8vw, 5rem);
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fffce1;
+    animation: fadeInUp 0.8s ease;
+    word-break: break-word;
 }
 
 #profile-img {
-	width: 200px;
-	height: 200px;
-	border-radius: 20px;
-	object-fit: cover;
-	margin: 30px auto;
-	display: block;
-	border: 3px solid #a8ff85;
-	filter: grayscale(100%);
-	transition: all 0.5s ease;
-	box-shadow: 0 20px 60px rgba(168, 255, 133, 0.1);
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    border: 3px solid #a8ff85;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    box-shadow: 0 20px 60px rgba(168, 255, 133, 0.1);
 }
 
 #profile-img:hover {
-	filter: grayscale(0%);
-	transform: scale(1.05);
-	box-shadow: 0 25px 80px rgba(168, 255, 133, 0.2);
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 0 25px 80px rgba(168, 255, 133, 0.2);
 }
 
 #course-year {
-	font-size: 1.2rem;
-	color: #a8ff85;
-	font-weight: 600;
-	margin: 10px 0;
-	letter-spacing: 0.05em;
+    font-size: 1.2rem;
+    color: #a8ff85;
+    font-weight: 600;
+    margin: 10px 0;
+    letter-spacing: 0.05em;
 }
 
-/* Theme Toggle Button */
+/* Theme Toggle */
 #theme-toggle {
-	background-color: #a8ff85;
-	color: #0e100f;
-	border: none;
-	padding: 15px 35px;
-	font-size: 1rem;
-	font-weight: 700;
-	border-radius: 50px;
-	cursor: pointer;
-	margin-top: 30px;
-	transition: all 0.3s ease;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	box-shadow: 0 10px 30px rgba(168, 255, 133, 0.3);
-	width: max-content;
-	max-width: 90%;
-	overflow-wrap: break-word;
+    background-color: #a8ff85;
+    color: #0e100f;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: 0 10px 30px rgba(168, 255, 133, 0.3);
+    width: max-content;
+    max-width: 90%;
+    overflow-wrap: break-word;
 }
 
 #theme-toggle:hover {
-	background-color: #95eb6f;
-	transform: translateY(-3px);
-	box-shadow: 0 15px 40px rgba(168, 255, 133, 0.4);
-}
-
-#theme-toggle:active {
-	transform: translateY(-1px);
+    background-color: #95eb6f;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(168, 255, 133, 0.4);
 }
 
 /* Sections */
 section {
-	max-width: 1200px;
-	margin: 60px auto;
-	padding: 40px 20px;
-	background-color: #1a1d1b;
-	border-radius: 20px;
-	border: 1px solid #2a2d2b;
-	transition: all 0.3s ease;
-	word-wrap: break-word;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 35px 20px;
+    background-color: #1a1d1b;
+    border-radius: 20px;
+    border: 1px solid #2a2d2b;
+    transition: all 0.3s ease;
+    word-wrap: break-word;
 }
 
 section:hover {
-	border-color: #a8ff85;
-	box-shadow: 0 10px 40px rgba(168, 255, 133, 0.1);
+    border-color: #a8ff85;
+    box-shadow: 0 10px 40px rgba(168, 255, 133, 0.1);
 }
 
 section h2 {
-	font-size: clamp(2rem, 5vw, 3rem);
-	font-weight: 900;
-	margin-bottom: 30px;
-	color: #fffce1;
-	text-transform: uppercase;
-	letter-spacing: -0.03em;
-	position: relative;
-	display: inline-block;
-	word-break: break-word;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 25px;
+    color: #fffce1;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    position: relative;
+    display: inline-block;
+    word-break: break-word;
 }
 
 section h2::before {
-	content: '{';
-	color: #a8ff85;
-	margin-right: 10px;
+    content: '{';
+    color: #a8ff85;
+    margin-right: 8px;
 }
 
 section h2::after {
-	content: '}';
-	color: #a8ff85;
-	margin-left: 10px;
+    content: '}';
+    color: #a8ff85;
+    margin-left: 8px;
 }
 
 /* Lists */
 ul {
-	list-style: none;
-	padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 ul li {
-	padding: 20px;
-	margin: 15px 0;
-	background-color: #0e100f;
-	border-radius: 12px;
-	border-left: 4px solid #a8ff85;
-	transition: all 0.3s ease;
-	font-size: 1.1rem;
-	line-height: 1.8;
-	word-break: break-word;
+    padding: 18px;
+    margin: 12px 0;
+    background-color: #0e100f;
+    border-radius: 12px;
+    border-left: 4px solid #a8ff85;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    word-break: break-word;
 }
 
 ul li:hover {
-	background-color: #1a1d1b;
-	transform: translateX(10px);
-	border-left-width: 8px;
+    background-color: #1a1d1b;
+    transform: translateX(8px);
+    border-left-width: 8px;
 }
 
 ul li strong {
-	color: #a8ff85;
-	font-weight: 700;
+    color: #a8ff85;
 }
 
 /* Links */
 a {
-	color: #a8ff85;
-	text-decoration: none;
-	font-weight: 600;
-	position: relative;
-	transition: all 0.3s ease;
-	word-break: break-word;
+    color: #a8ff85;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+    word-break: break-word;
 }
 
 a::after {
-	content: '';
-	position: absolute;
-	bottom: -2px;
-	left: 0;
-	width: 0;
-	height: 2px;
-	background-color: #a8ff85;
-	transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #a8ff85;
+    transition: width 0.3s ease;
 }
 
 a:hover {
-	color: #95eb6f;
+    color: #95eb6f;
 }
 
 a:hover::after {
-	width: 100%;
+    width: 100%;
 }
 
 /* Light Theme */
 body.light {
-	background-color: #f5f5f5;
-	color: #1a1d1b;
+    background-color: #f5f5f5;
+    color: #1a1d1b;
 }
 
 body.light header {
-	background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
-	border-bottom: 1px solid #e0e0e0;
+    background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+    border-bottom: 1px solid #e0e0e0;
 }
 
 body.light #name {
-	color: #1a1d1b;
+    color: #1a1d1b;
 }
 
 body.light #profile-img {
-	border-color: #4a8c3f;
+    border-color: #4a8c3f;
 }
 
 body.light #course-year {
-	color: #4a8c3f;
+    color: #4a8c3f;
 }
 
 body.light #theme-toggle {
-	background-color: #4a8c3f;
-	color: #ffffff;
+    background-color: #4a8c3f;
+    color: #fff;
 }
 
 body.light #theme-toggle:hover {
-	background-color: #3d7535;
+    background-color: #3d7535;
 }
 
 body.light section {
-	background-color: #ffffff;
-	border: 1px solid #e0e0e0;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
 }
 
 body.light section:hover {
-	border-color: #4a8c3f;
+    border-color: #4a8c3f;
 }
 
 body.light section h2 {
-	color: #1a1d1b;
+    color: #1a1d1b;
 }
 
 body.light section h2::before,
 body.light section h2::after {
-	color: #4a8c3f;
+    color: #4a8c3f;
 }
 
 body.light ul li {
-	background-color: #f9f9f9;
-	border-left-color: #4a8c3f;
-	color: #1a1d1b;
+    background-color: #f9f9f9;
+    border-left-color: #4a8c3f;
+    color: #1a1d1b;
 }
 
 body.light ul li:hover {
-	background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 body.light ul li strong {
-	color: #4a8c3f;
+    color: #4a8c3f;
 }
 
 body.light a {
-	color: #4a8c3f;
+    color: #4a8c3f;
 }
 
 body.light a::after {
-	background-color: #4a8c3f;
+    background-color: #4a8c3f;
 }
 
 body.light a:hover {
-	color: #3d7535;
+    color: #3d7535;
 }
 
 /* Animations */
 @keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Fully Mobile Responsive */
+/* Responsive Breakpoints */
 @media (max-width: 1024px) {
-	header {
-		padding: 50px 15px;
-	}
-	
-	#profile-img {
-		width: 180px;
-		height: 180px;
-	}
-	
-	#name {
-		font-size: 3rem;
-	}
-	
-	#course-year {
-		font-size: 1.1rem;
-	}
-
-	section {
-		padding: 35px 15px;
-		margin: 40px 10px;
-	}
-
-	ul li {
-		font-size: 1rem;
-		padding: 15px;
-	}
+    #profile-img { width: 160px; height: 160px; }
+    #name { font-size: 2.8rem; }
+    #course-year { font-size: 1.1rem; }
+    section { padding: 30px 15px; margin: 40px 10px; }
+    ul li { font-size: 1rem; padding: 14px; }
 }
 
 @media (max-width: 768px) {
-	#profile-img {
-		width: 150px;
-		height: 150px;
-	}
-	
-	#name {
-		font-size: 2.5rem;
-	}
-	
-	section h2 {
-		font-size: 1.6rem;
-	}
-	
-	#theme-toggle {
-		padding: 12px 30px;
-		font-size: 0.95rem;
-	}
+    #profile-img { width: 140px; height: 140px; }
+    #name { font-size: 2.3rem; }
+    section h2 { font-size: 1.5rem; }
+    #theme-toggle { padding: 10px 25px; font-size: 0.9rem; }
 }
 
 @media (max-width: 480px) {
-	#profile-img {
-		width: 120px;
-		height: 120px;
-	}
-	
-	#theme-toggle {
-		padding: 10px 25px;
-		font-size: 0.9rem;
-	}
-	
-	section {
-		margin: 20px 10px;
-		padding: 20px 15px;
-		border-radius: 15px;
-	}
-
-	section h2 {
-		font-size: 1.4rem;
-	}
-
-	ul li {
-		font-size: 0.95rem;
-		padding: 12px;
-	}
-
-	#name {
-		font-size: 2rem;
-	}
+    #profile-img { width: 120px; height: 120px; }
+    #name { font-size: 1.9rem; }
+    #course-year { font-size: 1rem; }
+    #theme-toggle { padding: 8px 20px; font-size: 0.85rem; }
+    section { margin: 15px 10px; padding: 20px 15px; border-radius: 15px; }
+    section h2 { font-size: 1.3rem; }
+    ul li { font-size: 0.9rem; padding: 10px; }
 }
